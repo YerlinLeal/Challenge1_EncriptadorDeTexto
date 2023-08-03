@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Montserrat:wght@100;300&family=Mukta:wght@200&family=Poppins:wght@100&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+        <script src="app.js"></script>
+    </head>
+
+    <body>
+        <section class="principal">
+            <div class="div-texto-ingresado">
+                <img class="logo" src="images/Logo2x.png" alt="Logo de Alura" onclick="limpiar()">
+                <textarea class="textarea-ingresado" id="texto" placeholder="Ingrese el texto aquí"></textarea>
+                <p> Solo letras minúsculas y sin acentos</p>
+                <div class="botones">
+                    <button class="boton-encriptar" onclick="encriptarTexto()">Encriptar</button>
+                    <button class="boton-desencriptar" onclick="desencriptarTexto()">Desencriptar</button>
+                </div>
+            </div>
+            <div class="div-texto-encriptado">
+                <button class="boton-copiar" id="botonCopiar" onclick="copiarTexto()">Copiar</button>
+                <img id="imagen" class="muneco" src="images/Muneco.png" alt="Imagen decorativa">
+                <p id="textoTitulo"><strong>Ningún mensaje fue encontrado</strong></p>
+                <p id="textoMostrar">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy Copyright Alura ONE - Yerlin Leal - 2023</p>
+        </footer>
+    </body>
+</html>

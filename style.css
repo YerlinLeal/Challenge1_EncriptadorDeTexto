@@ -1,0 +1,145 @@
+/*
+    PENDIENTE
+    Restringir que haya un mínimo de tamaño
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(#F3F5FC, white);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.principal {
+    width: 100%;
+    height: 95%;
+    display: flex;
+}
+
+.div-texto-ingresado {
+    width: 60%;
+}
+
+.logo {
+    width: 120px;
+    height: 48px;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+}
+
+textarea {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    outline: none;
+}
+
+.textarea-ingresado {
+    background: none;
+    display: block;
+    width: 80%;
+    height: 60%;
+    margin: auto;
+    padding: 1%;
+    border: none;
+    resize: none;
+}
+
+.div-texto-ingresado p {
+    width: 80%;
+    margin: 2% auto;
+    font-size: 12px;
+    color: #495057;
+}
+
+.div-texto-ingresado p:before {
+    content: "\0021";
+    background: #495057;
+    color: #F3F5FC;
+    font-weight: bold;
+    padding-inline: 1%;
+    border-radius: 100%;
+}
+
+.botones {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.botones p {
+    margin-block: 2%;
+}
+
+button {
+    width: 40%;
+    height: 40px;
+    margin: auto;
+    border-radius: 1em;
+}
+
+.boton-encriptar {
+    background: #0A3871;
+    color: #D8DFE8;
+    border: none;
+}
+
+.boton-desencriptar {
+    background: #D8DFE8;
+    color:#0A3871;
+    border-color: #0A3871;
+    border-style: double;
+}
+
+.boton-copiar {
+    visibility: hidden;
+    background: #D8DFE8;
+    color:#0A3871;
+    border-color: #0A3871;
+    border-style: double;
+    margin: 1em;
+    width: 25%;
+}
+
+.div-texto-encriptado {
+    background:white;
+    width: 30%;
+    height: 95%;
+    margin: auto;
+    border-radius: 32px;
+}
+
+.muneco {
+    width: 100%;
+    margin-top: 20%;
+}
+
+.div-texto-encriptado p {
+    text-align: center;
+    color: #343A40;
+    padding-top: 10%;
+}
+
+.div-texto-encriptado p strong {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+footer {
+    text-align: center;
+    background:white;
+    width: 100%;
+    height: 5%;
+    margin: auto;
+    font-size: 13px;
+}
